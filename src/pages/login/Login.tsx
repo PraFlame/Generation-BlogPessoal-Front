@@ -49,7 +49,7 @@ function Login() {
                             name="usuario"
                             placeholder="Usuário"
                             className="border-2 border-slate-700 rounded p-2"
-                            value={usuario.nome}
+                            value={usuarioLogin.usuario}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
 
                         />
@@ -63,7 +63,7 @@ function Login() {
                             name="senha"
                             placeholder="Senha"
                             className="border-2 border-slate-700 rounded p-2"
-                            value={usuario.nome}
+                            value={usuarioLogin.senha}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
 
                         />
@@ -78,7 +78,7 @@ function Login() {
                                 color="#ffffff"
                                 size={24}
                             /> :
-                            <span>Cadastrar</span>
+                            <span>Entrar</span>
                         }
                     </button>
 
